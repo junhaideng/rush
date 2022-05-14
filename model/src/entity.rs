@@ -83,8 +83,3 @@ pub async fn get_entity(url: &str, cookie: &str) -> Result<Vec<Entity>> {
     Ok(resp.entities)
 }
 
-#[tokio::test]
-async fn test_get_entity() {
-    let res = get_entity("https://dailyreport.sjtu.edu.cn/haircut/frontend/bus/schedule/list?lineType=TWO&date=2022-05-03", "agreeChecked=true; JSESSIONID=D16004E0991696C20025753981426DAA; dailyreport.sjtu=ffffffff097e1f5345525d5f4f58455e445a4a4229a0").await.unwrap();
-    println!("{:?}", res);
-}
