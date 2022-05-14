@@ -37,10 +37,10 @@ define_constants! {
 }
 
 define_constants! {
-  (MARKET_SCHEDULE_LIST, "https://dailyreport.sjtu.edu.cn/market/frontend/market/schedule/list"); 
+  (MARKET_SCHEDULE_LIST, "https://dailyreport.sjtu.edu.cn/market/frontend/market/schedule/list");
   (MARKET_APPOINTMENT, "https://dailyreport.sjtu.edu.cn/market/frontend/market/appointment/save");
 
-  (HAIRCUT_SCHEDULE_LIST, "https://dailyreport.sjtu.edu.cn/haircut//frontend/bus/schedule/list"); 
+  (HAIRCUT_SCHEDULE_LIST, "https://dailyreport.sjtu.edu.cn/haircut//frontend/bus/schedule/list");
   (HAIRCUT_APPOINTMENT, "https://dailyreport.sjtu.edu.cn/haircut/frontend/bus/appointment/save");
 }
 

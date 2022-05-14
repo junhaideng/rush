@@ -23,7 +23,7 @@ where
         {
             Ok(true) => println!("预约[{}]成功", choice.get_name()),
             Ok(false) => println!("预约[{}]失败", choice.get_name()),
-            Err(e) => println!("预约[{}]失败: ", e),
+            Err(e) => println!("预约[{}]失败: {}", choice.get_name(), e),
         }
     }
 
