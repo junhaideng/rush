@@ -2,9 +2,8 @@ name: Rush
 
 on: 
   push:
-    paths-ignore:
-      - 'README.md'
-      - '.gitignore'
+    tags:
+      - v*
 
 jobs:
   build:
@@ -27,3 +26,4 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: "target/release/rush${{matrix.suffix}}"
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN  }}
