@@ -29,6 +29,7 @@ define_constants! {
     (DQJYCS, "DQJYCS");
     (XQJYCS, "XQJYCS");
     (YLYLS, "YLYLS");
+    (SCQJ, "SCQJ");
 
     // 理发
     (SECOND, "TWO");
@@ -54,7 +55,8 @@ impl TryFrom<String> for Market {
             "1" => Ok(Market(String::from(XQJYCS), String::from("西区教超"))),
             "2" => Ok(Market(String::from(DQJYCS), String::from("东区教超"))),
             "3" => Ok(Market(String::from(YLYLS), String::from("罗森"))),
-            _ => Err(format!("未知参数 [{}], 仅支持 1,2,3", s)),
+            "4" => Ok(Market(String::from(SCQJ), String::from("四餐全家"))),
+            _ => Err(format!("未知参数 [{}], 仅支持 1,2,3,4", s)),
         }
     }
 }
